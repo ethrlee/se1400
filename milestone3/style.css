@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+/* GRID SETUP */
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+  gap: 10px;
+  padding: 16px 0;
+}
+
+/* PLACE EACH SECTION ON THE GRID */
+.header {
+  grid-column: 2 / 8;
+  background: rgba(255,0,0,0.15);
+  height: 100px;
+}
+
+.intro {
+  grid-column: 2 / 8;
+  background: rgba(0,0,255,0.15);
+  height: 200px;
+}
+
+.tone-archive {
+  grid-column: 2 / 8;
+  background: rgba(0,255,0,0.15);
+  height: 400px;
+}
+
+.signal-chains {
+  grid-column: 2 / 8;
+  background: rgba(255,255,0,0.15);
+  height: 400px;
+}
+
+.current-setup {
+  grid-column: 2 / 8;
+  background: rgba(255,0,255,0.15);
+  height: 200px;
+}
+
+.practice-log {
+  grid-column: 2 / 8;
+  background: rgba(0,255,255,0.15);
+  height: 200px;
+}
+
+.footer {
+  grid-column: 2 / 8;
+  background: rgba(0,0,0,0.15);
+  height: 120px;
+}
